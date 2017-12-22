@@ -4,12 +4,9 @@
         <title>Issue-Tracker-App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="main.js"></script>
-        <script src="http://chancejs.com/chance.min.js"></script>
+        
     </head>
-    <body>
+    <body onload="fetchIssues()">
         <div class="container">
             <h1>Issue Tracker App</h1>
                 <div class="jumbotron">
@@ -21,7 +18,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="issueSeverity">Severity</label>
-                                <select id="issueServ" class="form-control">
+                                <select id="issueSeverity" class="form-control">
                                     <option value="Low">Low</option>
                                     <option value="Medium">Medium</option>
                                     <option value="High">High</option>
@@ -39,8 +36,12 @@
                 </div>
             </div>
             <div class="footer">
-                <p>&copy; All Rights Reserved. December 2017</p>
+                <p>&copy; All Rights Reserved December 2017</p>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <script src="http://chancejs.com/chance.min.js"></script>
     </body>
 </html>
